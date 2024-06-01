@@ -1,0 +1,149 @@
+### Set: 7, Lines are coincident:
+Line 1 general eq: $- 6x - 2y + 22 = 0 \text{ and } - 40z + 200 = 0$
+
+Line 1 parametric eq: $x = 2 + 2t, y = 5 - 6t, z = 5$
+
+Line 1 canonical eq: $\frac{x - 2}{2} = \frac{y - 5}{-6} = \frac{z - (5)}{0}$
+
+Line 2 general eq: $- 3x - 1y + 11 = 0 \text{ and } - 10z + 100 = 0$
+
+Line 2 parametric eq: $x = 2 + 1t, y = 5 - 3t, z = 10$
+
+Line 2 canonical eq: $\frac{x - 2}{1} = \frac{y - 5}{-3} = \frac{z - (10)}{0}$
+
+
+
+### Set: 8, Lines are coincident:
+Line 1 general eq: $- 2y + 14 = 0 \text{ and } - 4x - 24 = 0$
+
+Line 1 parametric eq: $x = -6, y = 7, z = 2 - 2t$
+
+Line 1 canonical eq: $\frac{x - (-6)}{0} = \frac{y - (7)}{0} = \frac{z - 2}{-2}$
+
+Line 2 general eq: $4y - 16 = 0 \text{ and } - 16x + 112 = 0$
+
+Line 2 parametric eq: $x = 7, y = 4, z = 10 + 4t$
+
+Line 2 canonical eq: $\frac{x - (7)}{0} = \frac{y - (4)}{0} = \frac{z - 10}{4}$
+
+
+
+### Set: 3, Lines are intersecting:
+Line 1 general eq: $1x - 2y - 1 = 0 \text{ and } 4x + 2y - 5z + 21 = 0$
+
+Line 1 parametric eq: $x = 3 + 2t, y = 1 + 1t, z = 7 + 2t$
+
+Line 1 canonical eq: $\frac{x - 3}{2} = \frac{y - 1}{1} = \frac{z - 7}{2}$
+
+Line 2 general eq: $3x - 5y + 0 = 0 \text{ and } 40x + 24y - 34z + 238 = 0$
+
+Line 2 parametric eq: $x = -5 + 5t, y = -3 + 3t, z = -1 + 8t$
+
+Line 2 canonical eq: $\frac{x - (-5)}{5} = \frac{y - (-3)}{3} = \frac{z - (-1)}{8}$
+
+
+
+### Set: 4, Lines are intersecting:
+Line 1 general eq: $- 10y + 5z + 70 = 0 \text{ and } - 125x + 0 = 0$
+
+Line 1 parametric eq: $y = 3 - 5t, z = -8 - 10t$
+
+Line 1 canonical eq: $\frac{x - (0)}{0} = \frac{y - 3}{-5} = \frac{z - (-8)}{-10}$
+
+Line 2 general eq: $- 9x + 8y - 87 = 0 \text{ and } 16x + 18y - 145z + 928 = 0$
+
+Line 2 parametric eq: $x = -7 - 8t, y = 3 - 9t, z = 6 - 2t$
+
+Line 2 canonical eq: $\frac{x - (-7)}{-8} = \frac{y - 3}{-9} = \frac{z - 6}{-2}$
+
+
+
+### Set: 5, Lines are parallel:
+Line 1 general eq: $2x + 5y - 3 = 0 \text{ and } 15x - 6y - 29z - 8 = 0$
+
+Line 1 parametric eq: $x = -1 - 5t, y = 1 + 2t, z = -1 - 3t$
+
+Line 1 canonical eq: $\frac{x - (-1)}{-5} = \frac{y - 1}{2} = \frac{z - (-1)}{-3}$
+
+Line 2 general eq: $- 2x - 5y + 5 = 0 \text{ and } 15x - 6y - 29z + 151 = 0$
+
+Line 2 parametric eq: $x = -10 + 5t, y = 5 - 2t, z = -1 + 3t$
+
+Line 2 canonical eq: $\frac{x - (-10)}{5} = \frac{y - 5}{-2} = \frac{z - (-1)}{3}$
+
+
+
+### Set: 6, Lines are parallel:
+Line 1 general eq: $- 2x + 2y - 18 = 0 \text{ and } 2x + 2y - 8z - 2 = 0$
+
+Line 1 parametric eq: $x = -8 - 2t, y = 1 - 2t, z = -2 - 1t$
+
+Line 1 canonical eq: $\frac{x - (-8)}{-2} = \frac{y - 1}{-2} = \frac{z - (-2)}{-1}$
+
+Line 2 general eq: $10x - 10y + 140 = 0 \text{ and } 50x + 50y - 200z + 1600 = 0$
+
+Line 2 parametric eq: $x = -5 + 10t, y = 9 + 10t, z = 9 + 5t$
+
+Line 2 canonical eq: $\frac{x - (-5)}{10} = \frac{y - 9}{10} = \frac{z - 9}{5}$
+
+
+
+### Set: 1, Lines are skew:
+Line 1 general eq: $- 3x - 3y + 21 = 0 \text{ and } 18x - 18y - 18z - 252 = 0$
+
+Line 1 parametric eq: $x = 7 + 3t, y = 0 - 3t, z = -7 + 6t$
+
+Line 1 canonical eq: $\frac{x - 7}{3} = \frac{y - 0}{-3} = \frac{z - (-7)}{6}$
+
+Line 2 general eq: $1x + 2y + 7 = 0 \text{ and } - 18x + 9y - 5z + 189 = 0$
+
+Line 2 parametric eq: $x = 5 - 2t, y = -6 + 1t, z = 9 + 9t$
+
+Line 2 canonical eq: $\frac{x - 5}{-2} = \frac{y - (-6)}{1} = \frac{z - 9}{9}$
+
+
+
+### Set: 2, Lines are skew:
+Line 1 general eq: $9x + 7y - 34 = 0 \text{ and } - 70x + 90y - 130z + 1940 = 0$
+
+Line 1 parametric eq: $x = 10 - 7t, y = -8 + 9t, z = 4 + 10t$
+
+Line 1 canonical eq: $\frac{x - 10}{-7} = \frac{y - (-8)}{9} = \frac{z - 4}{10}$
+
+Line 2 general eq: $- 2x + 6y - 4 = 0 \text{ and } - 40z + 280 = 0$
+
+Line 2 parametric eq: $x = 7 - 6t, y = 3 - 2t, z = 7$
+
+Line 2 canonical eq: $\frac{x - 7}{-6} = \frac{y - 3}{-2} = \frac{z - (7)}{0}$
+
+
+
+### Set: 9, Lines are skew:
+Line 1 general eq: $- 1x + 4y + 5 = 0 \text{ and } - 17z - 34 = 0$
+
+Line 1 parametric eq: $x = 1 - 4t, y = -1 - 1t, z = -2$
+
+Line 1 canonical eq: $\frac{x - 1}{-4} = \frac{y - (-1)}{-1} = \frac{z - (-2)}{0}$
+
+Line 2 general eq: $7x - 9y - 30 = 0 \text{ and } 90x + 70y - 130z + 710 = 0$
+
+Line 2 parametric eq: $x = -6 + 9t, y = -8 + 7t, z = -3 + 10t$
+
+Line 2 canonical eq: $\frac{x - (-6)}{9} = \frac{y - (-8)}{7} = \frac{z - (-3)}{10}$
+
+
+
+### Set: 10, Lines are skew:
+Line 1 general eq: $- 1x - 1y + 7 = 0 \text{ and } - 1x + 1y - 2z + 9 = 0$
+
+Line 1 parametric eq: $x = 8 + 1t, y = -1 - 1t, z = 0 - 1t$
+
+Line 1 canonical eq: $\frac{x - 8}{1} = \frac{y - (-1)}{-1} = \frac{z - 0}{-1}$
+
+Line 2 general eq: $- 8x + 8y - 56 = 0 \text{ and } - 56x - 56y - 128z + 376 = 0$
+
+Line 2 parametric eq: $x = 1 - 8t, y = 8 - 8t, z = -1 + 7t$
+
+Line 2 canonical eq: $\frac{x - 1}{-8} = \frac{y - 8}{-8} = \frac{z - (-1)}{7}$
+
+
