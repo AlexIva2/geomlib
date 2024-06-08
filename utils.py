@@ -277,7 +277,7 @@ class GeometryGenerator:
 
         return "\n\n".join(results)
 
-class Plane:
+class Planes:
     def __init__(self, A, B, C, D):
         self.A = A
         self.B = B
