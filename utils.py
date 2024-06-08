@@ -404,7 +404,8 @@ def generate_matrices():
             break
 
     return matrix_A, matrix_A1, rank1, rank2
-
+    
+@staticmethod
 def generate_planes(set_number, txt=False):
     if set_number < 8:
         raise ValueError("set_number cannot be less than 8")
