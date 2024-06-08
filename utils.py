@@ -389,7 +389,7 @@ def generate_integer_matrix_with_exact_rank(rows, cols, rank):
 def matrix_to_planes(matrix):
     if matrix.shape[1] != 4:
         raise ValueError("Each row must have exactly 4 elements to initialize a Plane.")
-    return [Plane(*row) for row in matrix]
+    return [Planes(*row) for row in matrix]
 
 def generate_matrices():
     ranks = [(1, 1), (1, 2), (2, 2), (2, 3), (3, 3)]
@@ -463,7 +463,7 @@ def generate_planes(set_number, txt=False):
     if txt:
         with open("planes.txt", "w", encoding="utf-8") as file:
             file.write(result_str)
-
+            
 def generate_random_point():
     return np.random.randint(-10, 11, size=3)
 
