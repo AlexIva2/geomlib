@@ -21,7 +21,7 @@
 # Инструкция по применению библиотеки geomlib
 ## Установка и импорт
 1. Склонируйте репозиторий:
-   git clone https://github.com/AlexIva2/geomlib.git
+   `git clone https://github.com/AlexIva2/geomlib.git`
 2. Перейдите в директорию geomlib:
    cd geomlib
 3. Импортируйте необходимые функции из utils.py:
