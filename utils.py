@@ -528,28 +528,28 @@ class Line:
             return np.isclose(np.dot(np.cross(v1, v2), v3), 0)
     
     
-    def check_collinear(v1, v2):
-        cross_product = np.cross(v1, v2)
-        return np.allclose(cross_product, 0)
-    
-    
-    def lines_relationship(line1, line2, g):
-        v1 = line1.direction
-        v2 = line2.direction
-        p1 = line1.point
-        p2 = line2.point
-    
-        v3 = p2 - p1
-    
-        if not check_complanar(g, v1, v2):
-            return "skew"
-        if not check_collinear(v1, v2):
-            return "intersecting"
-    
-        if line1.contains_point(p2):
-            return "coincident"
-    
-        return "parallel"
+        def check_collinear(v1, v2):
+            cross_product = np.cross(v1, v2)
+            return np.allclose(cross_product, 0)
+        
+        
+        def lines_relationship(line1, line2, g):
+            v1 = line1.direction
+            v2 = line2.direction
+            p1 = line1.point
+            p2 = line2.point
+        
+            v3 = p2 - p1
+        
+            if not check_complanar(g, v1, v2):
+                return "skew"
+            if not check_collinear(v1, v2):
+                return "intersecting"
+        
+            if line1.contains_point(p2):
+                return "coincident"
+        
+            return "parallel"
     
     
     def generate_lines(num_variants=30, txt=False):
