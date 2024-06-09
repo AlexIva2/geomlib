@@ -524,8 +524,8 @@ class Line:
             return np.all(np.isclose(t_values, t_values[0]))
     
     
-    def check_complanar(v1, v2, v3):
-        return np.isclose(np.dot(np.cross(v1, v2), v3), 0)
+        def check_complanar(v1, v2, v3):
+            return np.isclose(np.dot(np.cross(v1, v2), v3), 0)
     
     
     def check_collinear(v1, v2):
