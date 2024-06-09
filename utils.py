@@ -552,76 +552,76 @@ class Line:
             return "parallel"
     
     
-    def generate_lines(num_variants=30, txt=False):
-        if num_variants < 4:
-            raise ValueError("num_variants cannot be less than 4")
-    
-        cases = {"skew": [], "intersecting": [], "coincident": [], "parallel": []}
-        results = []
-        unique_num = num_variants // 4
-        unique_cases_filled = False
-    
-        while len(results) < num_variants:
-            # Генерация случайных точек и направляющих векторов
-            A = generate_random_point()
-            B = generate_random_point()
-            p1 = generate_random_direction()
-            p2 = generate_random_direction()
-    
-            # Вычисление вектора g
-            g = A - B
-    
-            line1 = Line(A, p1)
-            line2 = Line(B, p2)
-    
-            relationship = lines_relationship(line1, line2, g)
-    
-            if not unique_cases_filled:
-                if len(cases[relationship]) < unique_num:
-                    cases[relationship].append((line1, line2))
-    
-                    general_eq1, parametric_eq1, canonical_eq1 = line1.equations()
-                    general_eq2, parametric_eq2, canonical_eq2 = line2.equations()
-    
-                    results.append(
-                        (
-                            relationship,
-                            f"### Set: {len(results) + 1}, Lines are {relationship}:\n"
-                            f"Line 1 general eq: ${general_eq1}$\n\n"
-                            f"Line 1 parametric eq: ${parametric_eq1}$\n\n"
-                            f"Line 1 canonical eq: ${canonical_eq1}$\n\n"
-                            f"Line 2 general eq: ${general_eq2}$\n\n"
-                            f"Line 2 parametric eq: ${parametric_eq2}$\n\n"
-                            f"Line 2 canonical eq: ${canonical_eq2}$\n\n\n",
+        def generate_lines(num_variants=30, txt=False):
+            if num_variants < 4:
+                raise ValueError("num_variants cannot be less than 4")
+        
+            cases = {"skew": [], "intersecting": [], "coincident": [], "parallel": []}
+            results = []
+            unique_num = num_variants // 4
+            unique_cases_filled = False
+        
+            while len(results) < num_variants:
+                # Генерация случайных точек и направляющих векторов
+                A = generate_random_point()
+                B = generate_random_point()
+                p1 = generate_random_direction()
+                p2 = generate_random_direction()
+        
+                # Вычисление вектора g
+                g = A - B
+        
+                line1 = Line(A, p1)
+                line2 = Line(B, p2)
+        
+                relationship = lines_relationship(line1, line2, g)
+        
+                if not unique_cases_filled:
+                    if len(cases[relationship]) < unique_num:
+                        cases[relationship].append((line1, line2))
+        
+                        general_eq1, parametric_eq1, canonical_eq1 = line1.equations()
+                        general_eq2, parametric_eq2, canonical_eq2 = line2.equations()
+        
+                        results.append(
+                            (
+                                relationship,
+                                f"### Set: {len(results) + 1}, Lines are {relationship}:\n"
+                                f"Line 1 general eq: ${general_eq1}$\n\n"
+                                f"Line 1 parametric eq: ${parametric_eq1}$\n\n"
+                                f"Line 1 canonical eq: ${canonical_eq1}$\n\n"
+                                f"Line 2 general eq: ${general_eq2}$\n\n"
+                                f"Line 2 parametric eq: ${parametric_eq2}$\n\n"
+                                f"Line 2 canonical eq: ${canonical_eq2}$\n\n\n",
+                            )
                         )
-                    )
-    
-                unique_cases_filled = all(len(cases[k]) >= unique_num for k in cases.keys())
-            else:
-                if len(results) < num_variants:
-                    cases[relationship].append((line1, line2))
-    
-                    general_eq1, parametric_eq1, canonical_eq1 = line1.equations()
-                    general_eq2, parametric_eq2, canonical_eq2 = line2.equations()
-    
-                    results.append(
-                        (
-                            relationship,
-                            f"### Set: {len(results) + 1}, Lines are {relationship}:\n"
-                            f"Line 1 general eq: ${general_eq1}$\n\n"
-                            f"Line 1 parametric eq: ${parametric_eq1}$\n\n"
-                            f"Line 1 canonical eq: ${canonical_eq1}$\n\n"
-                            f"Line 2 general eq: ${general_eq2}$\n\n"
-                            f"Line 2 parametric eq: ${parametric_eq2}$\n\n"
-                            f"Line 2 canonical eq: ${canonical_eq2}$\n\n\n",
+        
+                    unique_cases_filled = all(len(cases[k]) >= unique_num for k in cases.keys())
+                else:
+                    if len(results) < num_variants:
+                        cases[relationship].append((line1, line2))
+        
+                        general_eq1, parametric_eq1, canonical_eq1 = line1.equations()
+                        general_eq2, parametric_eq2, canonical_eq2 = line2.equations()
+        
+                        results.append(
+                            (
+                                relationship,
+                                f"### Set: {len(results) + 1}, Lines are {relationship}:\n"
+                                f"Line 1 general eq: ${general_eq1}$\n\n"
+                                f"Line 1 parametric eq: ${parametric_eq1}$\n\n"
+                                f"Line 1 canonical eq: ${canonical_eq1}$\n\n"
+                                f"Line 2 general eq: ${general_eq2}$\n\n"
+                                f"Line 2 parametric eq: ${parametric_eq2}$\n\n"
+                                f"Line 2 canonical eq: ${canonical_eq2}$\n\n\n",
+                            )
                         )
-                    )
-        results.sort(key=lambda x: x[0])
-        result_str = "\n".join([result[1] for result in results])
-    
-        if txt:
-            with open("lines.txt", "w", encoding="utf-8") as file:
-                file.write(result_str)
+            results.sort(key=lambda x: x[0])
+            result_str = "\n".join([result[1] for result in results])
+        
+            if txt:
+                with open("lines.txt", "w", encoding="utf-8") as file:
+                    file.write(result_str)
             
             
          
